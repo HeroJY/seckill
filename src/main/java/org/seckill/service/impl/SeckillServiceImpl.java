@@ -53,6 +53,7 @@ public class SeckillServiceImpl implements SeckillService{
 	@Override
 	public Exposer exportSeckillUrl(long seckillId) {
 		//优化点：通过redis缓存起来，降低数据库的压力
+		//可使用spring-data来进行和redis的整合
 		/**
 		 * 基本缓存控制逻辑
 		 * get from cache
