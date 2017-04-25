@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>秒杀列表页</title>
+      <title>秒杀列表页——hsp</title>
 	  <%@include file="common/head.jsp" %>
    </head>
    <body>
