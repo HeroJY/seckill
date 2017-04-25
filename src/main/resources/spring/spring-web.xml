@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns="http://www.springframework.org/schema/beans"   
+    xmlns:context="http://www.springframework.org/schema/context"   
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xmlns:mvc="http://www.springframework.org/schema/mvc" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+     http://www.springframework.org/schema/beans/spring-beans.xsd  
+     http://www.springframework.org/schema/context  
+     http://www.springframework.org/schema/context/spring-context.xsd 
+     http://www.springframework.org/schema/mvc
+     http://www.springframework.org/schema/mvc/spring-mvc.xsd ">
+     
+     <!-- 配置SpringMVC -->
+     <!-- 开启SpringMVC注解模式 ：自动注册DefaultAnnotationHandlerMapping,AnnotationMethodHandlerAdapter-->
+     <mvc:annotation-driven/>  
+     
+     <!-- 配置静态资源解析servlet -->
+     <mvc:default-servlet-handler/>
+     
+     <!-- 配置ModelAndView中jsp的显示 -->
+     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+     	   p:viewClass="org.springframework.web.servlet.view.JstlView"
+     	   p:prefix="/WEB-INF/jsp/"
+     	   p:suffix=".jsp"/>
+     	   
+     <!-- 扫描web相关的包 -->
+     <context:component-scan base-package="org.seckill.web"/>
+ </beans>
