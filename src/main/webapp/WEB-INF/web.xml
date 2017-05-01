@@ -9,7 +9,7 @@
   	  <!-- 配置springMVC需要加载的配置文件：spring-dao.xml,spring-service.xml,spring-web.xml -->
   	  <init-param>
   	  	  <param-name>contextConfigLocation</param-name>
-  	  	  <param-value>classpath:spring/spring-*.xml</param-value>
+  	  	  <param-value>classpath*:spring/spring-*.xml</param-value>
   	  </init-param>
   </servlet>
   
