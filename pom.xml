@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>seckill</groupId>
   <artifactId>seckill</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>war</packaging>
   <name>seckill</name>
   <description/>
@@ -130,6 +130,7 @@
   </dependencies>
   <build>
     <plugins>
+        <!-- 解决compile时不支持泛型 -->
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>2.3.2</version>
@@ -138,6 +139,14 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+        <!-- 当引用了junit后打包时需要使用这个插件 -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+                <testFailureIgnore>true</testFailureIgnore>
+            </configuration>
+        </plugin>
     </plugins>
   </build>
 </project>
