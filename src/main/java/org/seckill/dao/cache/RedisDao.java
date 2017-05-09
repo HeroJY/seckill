@@ -21,6 +21,7 @@ public class RedisDao {
     //类似于数据库连接池的pool
     private final JedisPool jedisPool;
 
+    //构造函数注入ip和port
     public RedisDao(String ip, int port) {
         jedisPool = new JedisPool(ip, port);
     }
