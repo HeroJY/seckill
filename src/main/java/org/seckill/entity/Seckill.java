@@ -6,11 +6,6 @@ import java.util.Date;
 
 public class Seckill implements Serializable{
 	
-	/**
-	 * 序列化的Id
-	 */
-	private static final long serialVersionUID = 5668466407946345173L;
-
 	private long seckillId;
 	
 	private String name;
