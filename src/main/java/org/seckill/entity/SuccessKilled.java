@@ -4,11 +4,17 @@ import java.util.Date;
 
 
 public class SuccessKilled {
-	
+	/**
+	 * 秒杀货物ID号
+	 */
 	private long seckillId;
-	
+	/**
+	 * 用户手机号
+	 */
 	private long userPhone;
-	
+	/**
+	 * 是否付款标志
+	 */
 	private short state;
 	
 	private Date createTime;
