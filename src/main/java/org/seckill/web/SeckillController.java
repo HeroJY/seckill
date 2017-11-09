@@ -29,7 +29,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  * @author hjy
- *
+ * 秒杀操作controller
  */
 @Controller
 @RequestMapping("/seckill")//url:/模块/资源/{id}/细分
