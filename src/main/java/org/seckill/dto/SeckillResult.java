@@ -7,11 +7,20 @@ package org.seckill.dto;
  * @param <T>
  */
 public class SeckillResult<T> {
-	
+
+	/**
+	 * 是否成功标志
+	 */
 	private boolean success;
-	
+
+	/**
+	 * 成功信息
+	 */
 	private T data;
-	
+
+	/**
+	 * 错误信息
+	 */
 	private String error;
 
 	public SeckillResult(boolean success, T data) {
@@ -25,6 +34,7 @@ public class SeckillResult<T> {
 		this.success = success;
 		this.error = error;
 	}
+
 
 	public boolean isSuccess() {
 		return success;
