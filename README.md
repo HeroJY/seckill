@@ -1,4 +1,2 @@
 # seckill
-The first repository
-在idea修改的
-在网页修改的
+The first repository能否覆盖本地的
